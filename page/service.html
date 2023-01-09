@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>My Portofolio | Service</title>
+    <style>
+        body {
+            background-color: #4040c5;
+        }
+
+        .hero {
+            width: 100%;
+        }
+
+        nav {
+            background-color: #6161e7;
+        }
+        .container  {
+            text-align: center;
+            color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container #service {
+            margin-top: -6rem;
+            margin-bottom: 55px;
+        }
+
+        .container p {
+            font-size: 25px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .container-item {
+            margin-top: 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: transform .4s;
+        }
+
+        .container-item a {
+            color: white;
+        }
+
+        .container-item a:hover {
+            cursor: pointer;
+            z-index: 2px;
+            box-shadow: 5px;
+            color: blue;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <div class="Logo">
+                <h4>HARMERT</h4>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="../index.html">Menu Utama</a> 
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="service.html">Service</a>
+                </li>
+                <li>
+                    <a href="project.html">Project</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>     
+                </li>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7070c9" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,213.3C384,213,480,139,576,128C672,117,768,171,864,192C960,213,1056,203,1152,176C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+        <div class="container">
+            <ul class="sub-container">
+                <p id="service">Service</p>
+                <li>
+                    <a href="#" class="container-item">
+                        <img src="../img/Icons/coding.png">
+                        <p>Coding</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="container-item">
+                        <img src="../img/Icons/game-controller.png">
+                        <P>Joki Game FPS</P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="container-item">
+                        <img src="../img/Icons/video-editing.png">
+                        <p>Video Editing</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7070c9" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,213.3C384,213,480,139,576,128C672,117,768,171,864,192C960,213,1056,203,1152,176C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <!-- Copy Right -->
+    <div class="copyright">
+        <p>Copyright © Arya Saputra 2022</p>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('slide');
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>My portfolio | Project</title>
+    <style>
+        body {
+            background-color: #4040c5;
+        }
+
+        nav {
+            background-color: #6161e7;
+        }
+
+        ul {
+            text-decoration: none;
+        }
+
+        .headerp {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .headerp h4 {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .project {
+            width: 90%;
+            max-width: 240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 20px;
+        }
+
+        .card {
+            background: white;
+            text-decoration: none;
+            color: #444;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            z-index: -90px;
+            flex-direction: column;
+            min-height: 100%;
+            position: relative;
+            top: 0;
+            transition: all 0.1s ease-in;
+        }
+
+        .card:hover {
+            top: -2;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .card .item1 {
+            padding-bottom: 60%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card article {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+        }
+
+        .card h4 {
+            font-size: 20px;
+            margin: 0;
+            color: #333;
+        }
+
+        .card span {
+            font-size: 12px;
+            font-weight: bold;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+            margin: 2em 0 0 0;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 0;
+            height: 150px;
+            box-shadow: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <div class="Logo">
+                <h4>HARMERT</h4>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="../index.html">Menu Utama</a> 
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="service.html">Service</a>
+                </li>
+                <li>
+                    <a href="project.html">Project</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>     
+                </li>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7070c9" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,213.3C384,213,480,139,576,128C672,117,768,171,864,192C960,213,1056,203,1152,176C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="headerp">
+            <h4>
+                PROJECT
+            </h4>
+        </div>
+        <div class="project">
+            <div class="card">
+                <div class="item1" style="background-color: white;"></div>
+                <article>
+                    <h1>
+                        Coming Soon!!!
+                    </h1>
+                    <span>ADMIN</span>
+                </article>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>    
+    </div>
+    <div class="main">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7070c9" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,213.3C384,213,480,139,576,128C672,117,768,171,864,192C960,213,1056,203,1152,176C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+<!-- Copy Right -->
+    <div class="copyright">
+        <p>Copyright © Arya Saputra 2022</p>
+    </div>
+</body>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('slide');
+        });
+    </script>
+
+</html>

@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* NavBar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    color: rgb(13, 04, 143);
+    z-index: 2px;
+}
+
+nav .logo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 23px;
+}
+
+nav h4 {
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgba(5, 66, 233, 0.801);
+}
+
+.btn {
+    background-color: #20b2aa;
+    color: #fafafa;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+
+/* Hamburger menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+
+/* Hamburger Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;   
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;   
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px,-1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-43deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(5) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Copyright */
+.copyright {
+    border: 2px solid #5151f3;
+    height: 50px;
+    background-color: #6161e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    font-size: large;
+    color: white;
+}
+
+/* respon */
+@media (min-width: 587px) {
+    .project {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .project {
+        grid-template-columns: repeat (4, 1fr);
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 587px) {
+    body {
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        z-index: 8px;
+        transform: translateX(100%);
+        transition: all 1.2s;
+        opacity: 0;
+    }
+
+    nav ul li a {
+        z-index: 8px;
+    }
+
+    nav ul a {
+        z-index: 8px;
+    }
+
+    .btn-more {
+        width: 100px;
+        background-color: #20b2aa;
+        color: #fafafa;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 10px 25px;
+        border-radius: 30px;
+        transition: transform .4s;
+        margin-left: 433px;
+    }
+
+    nav ul.slide {
+        background-color: #6161e7;
+        opacity: 0.8;
+        z-index: 8px;
+        transform: translateX(0);
+    }
+
+    .backgroundp {
+        margin-top: 4rem;
+    }
+
+    .sub-container {
+        margin-top: 4rem;
+    }
+}

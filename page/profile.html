@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>My portfolio | Profile</title>
+    <style>
+        body {
+            background-color: #4040c5;
+        }
+
+        nav {
+            background-color: #6161e7;
+        }
+        .identity {
+            font-size: 40px;
+            margin-top: -6rem;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: white; 
+        }
+
+        .identity img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 3px;
+        }
+
+        .about p {
+            margin: 1rem 20px;
+            color: aliceblue;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .life {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .litem li {
+            margin: 50px;
+            text-decoration: none;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="Logo">
+            <h4>HARMERT</h4>
+        </div>
+
+        <ul>
+            <li>
+                <a href="../index.html">Menu Utama</a> 
+            </li>
+            <li>
+               <a href="profile.html">Profile</a> 
+            </li>
+            <li>
+                <a href="service.html">Service</a>
+            </li>
+            <li>
+                <a href="project.html">Project</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>     
+            </li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+<!-- Main Pabout -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7070c9" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,213.3C384,213,480,139,576,128C672,117,768,171,864,192C960,213,1056,203,1152,176C1248,149,1344,107,1392,85.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    <div class="backgroundp">
+        <div class="identity">
+            <img src="../img/Profile/fd.jpg">
+            <p>
+                Arya Saputra
+                <br>
+                Universitas Pasundan
+            </p>
+        </div>
+        <div class="about">
+            <p>
+                Perkenalkan saya Arya Saputra saya bersal dari kota Kuningan Jawa Barat, saya saat ini tengah
+                menempuh pendidikan di Universita Pasundan dengan mengambil program studi Teknik Informatika,
+                saya mengambil program studi ini bertujuan untuk mengejar cita-cita saya yaitu menjadi seorang 
+                Cyber securty.
+            </p>
+        </div>
+        <div class="life">
+            <ul class="litem">
+                <li class="lrmotto">
+                    Motto Hidup
+                    <br>
+                    Tetap melangkah dan jangan pernah berhenti karena waktu tidak pernah berhenti berputar
+                </li>
+                <li class="lrvisi">
+                    Visi
+                    <br>
+                    Selalu memegang teguh motto hidup
+                </li>
+                <li class="lrmisi">
+                    Misi
+                    <br>
+                    Membanggakan ke-dua orang tua
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7070c9" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,213.3C384,213,480,139,576,128C672,117,768,171,864,192C960,213,1056,203,1152,176C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    
+    <!-- Copy Right -->
+    <div class="copyright">
+        <p>Copyright © Arya Saputra 2022</p>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+</html>
